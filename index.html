@@ -14,6 +14,9 @@ border:12px groove;
 text-height:50px;
 text-align:center;
 height:100px;
+p{
+height:100px
+}
 }
 #tgAuthLink{
         display: block;
@@ -69,8 +72,8 @@ u_name="No username"
 }else{
 u_name=user.username
 }
-var text=" Name: "+user.first_name+"<br>"+"🆔: "+user.telegramid+"<br>"+" Username: "+u_name
-var pu=document.getElementById("srb").innerHTML=text
+var text="<p>👤 Name: "+user.first_name+"</p><br>"+"<p>🆔: "+user.telegramid+"</p><br>"+"<p> Username: "+u_name+"</p>"
+document.getElementById("srb").innerHTML=text
         /* add any signIn code here */
         /*$("#result").text("Hello, " + user.first_name + ' ' + user.last_name +
           '! Your telegram ID: ' + user.telegramid);*/
