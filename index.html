@@ -24,6 +24,7 @@ height:100px;
 
 </style>
   <body>
+<div id="srb">
     <h1>Login to SRB demo Telegram login</h1>
 
     
@@ -48,7 +49,7 @@ height:100px;
 
     <p id="result">
     </div>
-
+</div>
   </body>
 
 
@@ -69,6 +70,7 @@ u_name="No username"
 u_name=user.username
 }
 var text=" Name: "+user.first_name+"<br>"+"🆔: "+user.telegramid+"<br>"+" Username: "+u_name
+var pu=document.getElementById("srb").innerHTML=text
         /* add any signIn code here */
         /*$("#result").text("Hello, " + user.first_name + ' ' + user.last_name +
           '! Your telegram ID: ' + user.telegramid);*/
