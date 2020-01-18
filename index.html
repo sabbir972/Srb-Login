@@ -8,9 +8,10 @@
 <style>
 h1{
 color:white;
-height:20px
+
 background-color:black;
-border:12px groove
+border:12px groove;
+height:200px;
 }
 #tgAuthLink{
         display: block;
@@ -60,11 +61,11 @@ background-color:yellow;
     // вызывает метод init
     $().tgAuth({
       /* botId: 68, /* ID for yours own bot in Bots.business */
-      bot_params: { hello_msg: "Authorized 😀",
+      bot_params: { hello_msg: "Successfull login to ",
                     somebody_already_autorized_msg: "Somebody has already entered. Not you?"
                   },
       onAuthorize: function(user){
-        alert("Authorized"); /* alert for page focus */
+        alert("Login to Srb web successfull. Thank you for login"); /* alert for page focus */
 
         /* add any signIn code here */
         $("#result").text("Hello, " + user.first_name + ' ' + user.last_name +
