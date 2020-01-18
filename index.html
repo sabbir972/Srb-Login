@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <h1>Srb demo telegram web login via telegram</h1>
+    <h1>Demo for JQuery Telegram Auth</h1>
 
     <style type="text/css">
       #tgAuthLink{
@@ -16,17 +16,12 @@
       .tgAuthInfo{
         font-size:25px;
       }
-#tgSignUpFrm{
-Width:50%;
-height:50%
-align:center;
-color:red
-}
+
     </style>
 
     <div id="tgauthContainer">
       <form id="tgSignUpFrm">
-        <input type="submit" value="Connect With Telegram">
+        <input type="submit" value="Sign Up with Telegram">
       </form>
 
       <div id="tgWait" style="display:none">
@@ -49,8 +44,8 @@ color:red
 
     // вызывает метод init
     $().tgAuth({
-       /*botId:60084 , /* ID for yours own bot in Bots.business */
-      bot_params: { hello_msg: "😉 Thank you for login to the srb demo web",
+      /* botId: 68, /* ID for yours own bot in Bots.business */
+      bot_params: { hello_msg: "Authorized 😀",
                     somebody_already_autorized_msg: "Somebody has already entered. Not you?"
                   },
       onAuthorize: function(user){
