@@ -15,6 +15,27 @@ text-height:50px;
 text-align:center;
 height:100px;
 }
+div2 {
+  width: 150px;
+  height: 140px;
+  background: red;
+  position: relative;
+  -webkit-animation: myfirst 5s 2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  animation: myfirst 5s 2;
+  animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+
+
+@keyframes myfirst {
+  0%   {background: none; left: 0px; top: 0px;}
+  25%  {background: none; left: 200px; top: 0px;}
+  50%  {background: none; left: 200px; top: 200px;}
+  75%  {background: none; left: 0px; top: 200px;}
+  100% {background: none; left: 0px; top: 0px;}
+}
 #body{
 height:100px;
 width:200px;
@@ -59,7 +80,15 @@ background-color:blue
 
     <p id="result">
     </div>
+<div2><pre><b>┏━━┓┏━━┓┏━━┓┏━━┓
+┗━┓┃┃┏┓┃┗━┓┃┃┏┓┃
+┏━┛┃┃┃┃┃┏━┛┃┃┃┃┃ 
+B O T S B U S I N E S S• 🤖
+┃┏━┛┃┃┃┃┃┏━┛┃┃┃┃
+┃┗━┓┃┗┛┃┃┗━┓┃┗┛┃
+┗━━┛┗━━┛┗━━┛┗━━┛</b></pre></div2>
 </div>
+
   </body>
 
 
