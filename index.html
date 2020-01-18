@@ -46,7 +46,7 @@ height:100px;
       </div>
     </div>
 
-    <div id="result">
+    <p id="result">
     </div>
 
   </body>
@@ -63,10 +63,15 @@ height:100px;
                   },
       onAuthorize: function(user){
         alert("Login to Srb web successfull. Thank you for login"); /* alert for page focus */
-
+if(!user.username){
+u_name="No username"
+}else{
+u_name=user.username
+}
+var text=" Name: "+user.first_name+"<br>"+"🆔: "+user.telegramid+"<br>"+" Username: "+u_name
         /* add any signIn code here */
-        $("#result").text("Hello, " + user.first_name + ' ' + user.last_name +
-          '! Your telegram ID: ' + user.telegramid);
+        /*$("#result").text("Hello, " + user.first_name + ' ' + user.last_name +
+          '! Your telegram ID: ' + user.telegramid);*/
       }
     });
 
