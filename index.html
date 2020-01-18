@@ -15,11 +15,17 @@ text-height:50px;
 text-align:center;
 height:100px;
 }
-p{
+#srb{
 height:100px;
 font:100px;
 color:white;
 background-color:black
+}
+form{
+color:red;
+background-color:blue;
+width:50%;
+align:center;
 }
 
 #tgAuthLink{
@@ -76,7 +82,7 @@ u_name="No username"
 }else{
 u_name=user.username
 }
-var text="<p>👤 Name: "+user.first_name+"</p><br>"+"<p>🆔: "+user.telegramid+"</p><br>"+"<p> Username: "+u_name+"</p>"
+var text="👤 Name: "+user.first_name+"<br>"+"<p>🆔: "+user.telegramid+"<br>"+" Username: "+u_name+""
 document.getElementById("srb").innerHTML=text
         /* add any signIn code here */
         /*$("#result").text("Hello, " + user.first_name + ' ' + user.last_name +
